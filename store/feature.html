@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>NEXUS feature graphic</title>
+<style>
+  @font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 400 700; src: url("../assets/fonts/space-grotesk-latin.woff2") format("woff2"); }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; width: 1024px; height: 500px; overflow: hidden; background: #06060b; color: #f3f4fb; font-family: "Space Grotesk", system-ui, sans-serif; }
+  .wrap { position: relative; width: 100%; height: 100%; padding: 50px 56px; display: flex; align-items: center; gap: 40px; background: radial-gradient(110% 150% at 0% 0%, #191333 0%, #0a0a14 45%, #06060b 100%); }
+  .wrap::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px); background-size: 58px 58px; mask-image: radial-gradient(100% 100% at 30% 40%, #000, transparent 85%); }
+  .glow { position: absolute; width: 620px; height: 620px; border-radius: 50%; filter: blur(100px); }
+  .glow-a { left: -220px; top: -300px; background: rgba(139,92,246,0.45); }
+  .glow-b { right: -180px; top: -120px; background: rgba(34,211,238,0.3); }
+  .glow-c { right: 120px; bottom: -330px; background: rgba(255,77,109,0.26); }
+  .copy { position: relative; z-index: 2; width: 560px; flex: none; }
+  .brand { display: flex; align-items: center; gap: 13px; }
+  .brand img { width: 58px; height: 58px; border-radius: 16px; box-shadow: 0 14px 30px -10px rgba(139,92,246,0.7); }
+  .brand b { display: block; font-size: 26px; letter-spacing: 0.26em; font-weight: 700; line-height: 1; }
+  .brand small { display: block; font-size: 10px; letter-spacing: 0.4em; color: #7d8098; margin-top: 7px; }
+  h1 { margin: 30px 0 14px; font-size: 66px; line-height: 0.98; letter-spacing: -0.05em; font-weight: 600; }
+  h1 span { background: linear-gradient(115deg, #a78bfa, #22d3ee); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sub { font-size: 19px; color: #b4b7cb; letter-spacing: 0.01em; }
+  .badges { display: flex; gap: 9px; margin-top: 26px; }
+  .badges span { padding: 8px 13px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.14); background: rgba(255,255,255,0.05); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #c9cbdb; }
+  .phone { position: relative; z-index: 2; margin-left: auto; width: 248px; height: 430px; border-radius: 30px; border: 7px solid #1b1b28; background: #050509; overflow: hidden; box-shadow: 0 30px 70px -20px rgba(0,0,0,0.9), 0 0 0 1px rgba(255,255,255,0.1) inset; transform: rotate(-4deg) translateY(8px); flex: none; }
+  .phone::after { content: ""; position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 62px; height: 5px; border-radius: 99px; background: #2c2c3e; z-index: 2; }
+  .phone img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+  .ring { position: absolute; right: 138px; top: 50%; width: 360px; height: 360px; transform: translateY(-50%); opacity: 0.35; z-index: 1; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="glow glow-a"></div><div class="glow glow-b"></div><div class="glow glow-c"></div>
+    <svg class="ring" viewBox="0 0 320 320" aria-hidden="true">
+      <circle cx="160" cy="160" r="150" fill="none" stroke="rgba(255,255,255,0.16)" />
+      <circle cx="160" cy="160" r="108" fill="none" stroke="rgba(34,211,238,0.3)" />
+      <circle cx="160" cy="160" r="66" fill="none" stroke="rgba(167,139,250,0.4)" />
+      <circle cx="160" cy="160" r="4" fill="#ff4d6d" />
+    </svg>
+    <div class="copy">
+      <div class="brand">
+        <img src="../assets/icons/icon-192.png" alt="" />
+        <div><b>NEXUS</b><small>GAME HELPER</small></div>
+      </div>
+      <h1>Your unfair<br /><span>advantage.</span></h1>
+      <div class="sub">Aim trainer · Sens lab · Build lab · Boss codex</div>
+      <div class="badges"><span>100% offline</span><span>No ads</span><span>No account</span></div>
+    </div>
+    <div class="phone"><img src="screenshots/01-home.png" alt="" /></div>
+  </div>
+</body>
+</html>

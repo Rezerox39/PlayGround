@@ -1,0 +1,27 @@
+{
+  "id": "./",
+  "name": "NEXUS — Game Helper & Aim Lab",
+  "short_name": "NEXUS",
+  "description": "Aim trainer, sensitivity converter, loadout lab, and boss codex in one offline gaming companion.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "portrait",
+  "background_color": "#06060b",
+  "theme_color": "#06060b",
+  "categories": ["games", "utilities", "health"],
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Aim Lab", "short_name": "Aim", "description": "Start a 30-second aim drill", "url": "./#/aim", "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Sens Lab", "short_name": "Sens", "description": "Convert your cm/360", "url": "./#/sens", "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Boss Codex", "short_name": "Codex", "description": "Open the boss fight plans", "url": "./#/codex", "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

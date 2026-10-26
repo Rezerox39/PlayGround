@@ -1,0 +1,49 @@
+{
+  "packageId": "com.example.nexus",
+  "host": "your-domain.example",
+  "name": "NEXUS — Game Helper & Aim Lab",
+  "launcherName": "NEXUS",
+  "display": "standalone",
+  "themeColor": "#06060b",
+  "themeColorDark": "#06060b",
+  "navigationColor": "#06060b",
+  "navigationColorDark": "#06060b",
+  "backgroundColor": "#06060b",
+  "startUrl": "/",
+  "iconUrl": "https://your-domain.example/assets/icons/icon-512.png",
+  "maskableIconUrl": "https://your-domain.example/assets/icons/maskable-512.png",
+  "webManifestUrl": "https://your-domain.example/manifest.webmanifest",
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "enableNotifications": false,
+  "generatorApp": "bubblewrap-cli",
+  "fallbackType": "customtabs",
+  "orientation": "portrait",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "features": {},
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "android"
+  },
+  "shortcuts": [
+    {
+      "name": "Aim Lab",
+      "shortName": "Aim",
+      "url": "/#/aim",
+      "chosenIconUrl": "https://your-domain.example/assets/icons/icon-192.png"
+    },
+    {
+      "name": "Sens Lab",
+      "shortName": "Sens",
+      "url": "/#/sens",
+      "chosenIconUrl": "https://your-domain.example/assets/icons/icon-192.png"
+    },
+    {
+      "name": "Boss Codex",
+      "shortName": "Codex",
+      "url": "/#/codex",
+      "chosenIconUrl": "https://your-domain.example/assets/icons/icon-192.png"
+    }
+  ]
+}
